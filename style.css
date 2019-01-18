@@ -1,0 +1,15 @@
+.headerError{
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -50px;  /* margin is -0.5 * dimension */
+
+    letter-spacing: normal;
+    text-align: center;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
