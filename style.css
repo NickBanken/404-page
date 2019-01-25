@@ -1,15 +1,134 @@
-.headerError{
-    position: fixed;
-    width: 250px;
-    height: 250px;
-    top: 50%;
-    left: 50%;
-    margin-left: -100px;
-    margin-top: -50px;  /* margin is -0.5 * dimension */
+body{
+    margin: 0;
+    background-color: #427085;
+}
 
-    letter-spacing: normal;
-    text-align: center;
+.container{
+    display: grid;
+    grid-template-rows:2fr 1f 1f;   
+    max-width: 100%;
+}
 
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.header{
+    grid-row: 1;
+    display: grid;
+      
+    height: 400px;
+
+    grid-template-columns:1fr 1fr 1fr; 
+    justify-content: center;
+}
+
+.image{
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.imageerror{
+    display: flex;
+    
+    
+    width: 400px;
+    height: 360px;
+}
+
+.imageerror img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
     
 }
+
+.numbercon1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column: 1;
+}
+
+.number1{
+    font-size: 250px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.numbercon2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-column: 3;
+}
+
+.number2{
+    font-size: 250px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.textinfo{
+    color: black;
+    display: block;
+    grid-row: 2;
+    font-size:20px;
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+}
+
+
+.footer{
+    display: flex;
+    grid-row: 3;
+    min-height: 120px;
+    
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f76e1e;
+    border: solid white;;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Luckiest Guy', cursive;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    height: 80px;
+    border-spacing: 5px;
+
+    -webkit-box-shadow: -10px 7px 10px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 7px 10px -2px rgba(0,0,0,0.75);
+     box-shadow: -10px 7px 10px -2px rgba(0,0,0,0.75);
+   
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+
